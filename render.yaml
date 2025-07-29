@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: stirling-pdf
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerImage: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: DISABLE_ADDITIONAL_FEATURES
+        value: "false"
+      - key: LANGS
+        value: en_GB

@@ -4,7 +4,7 @@ services:
     env: docker
     plan: free
     autoDeploy: true
-    dockerImage: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest
+    dockerImage: stirlingtools/stirling-pdf:latest
     envVars:
       - key: PORT
         value: 8080
